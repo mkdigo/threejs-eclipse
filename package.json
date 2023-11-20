@@ -5,8 +5,9 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
-    "preview": "vite preview"
+    "build": "tsc && vite build --base=/threejs-eclipse/",
+    "preview": "vite preview",
+    "publish": "git subtree push --prefix dist origin gh-pages"
   },
   "devDependencies": {
     "@types/three": "^0.158.2",
